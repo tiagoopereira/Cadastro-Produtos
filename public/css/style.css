@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.not-found-message {
+    margin-bottom: 2px;
+}
+
+.form-tag-buttons  {
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.product-form-list-tags {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.list-form-tags {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products-table {
+    margin-top: 20px;
+}
+
+.product-table-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-list-tags {
+    font-size: 10pt;
+    margin: 0;
+}
+
+.products-list-tag-name {
+    background-color: #77afe0;
+    padding: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    max-height: 30px;
+    font-size: 7pt;
+    font-weight: bold;
+}
