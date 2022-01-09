@@ -2,7 +2,7 @@
 ### Execução
 ####  Makefile:
     - make run
-    - localhost:8080
+    - porta utilizada: 8080
 #### Rodando separadamente
     - composer install (Para instalar as dependências e gerar o arquivo de autoload).
     - copiar o arquivo ".env.example" para ".env" (cp .env.example .env)
@@ -10,10 +10,11 @@
     > Utilizando Docker:
         - docker-compose up -d
         - docker exec -it php php bin/console doctrine:migrations:migrate
-  
+        - porta utilizada: 8080
+          
     > Utilizando somente PHP:
         - Necessário PHP:8.*
-        - php -S 0.0.0.0:80 -t public/
+        - php -S 0.0.0.0:8080 -t public/
         - php bin/console doctrine:migrations:migrate
 
 #### Rotas
