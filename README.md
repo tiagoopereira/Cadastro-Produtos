@@ -29,4 +29,13 @@
         - /tags/create => criação de tag
         - /tags/{id} => listagem de uma tag em modo formulário para edição
         - /tags/{id} (DELETE) => exclusão de uma tag
-    
+
+#### Query de relatório de relevânca de produto
+```sql
+SELECT
+   t.name as "Tag",
+   count(pt.product_id) as "Products_Sum"
+FROM tags t
+LEFT JOIN product_tag pt ON pt.tag_id = t.id
+GROUP BY t.id;
+```
