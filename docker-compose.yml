@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+    php:
+        build:
+            context: .
+        image: php
+        container_name: cadastro_produtos
+        ports:
+            - "8080:80"
+        volumes:
+            - ".:/var/www/html/"
+        command: php -S 0.0.0.0:80 -t public/
+        links:
+            - mysql
+    mysql:
+        image: mysql:5.7
+        container_name: mysql
+        ports:
+            - "3306:3306"
+        volumes:
+            - mysql:/var/lib/mysql/
+        environment:
+            MYSQL_ALLOW_EMPTY_PASSWORD: ${DB_ALLOW_EMPTY_PASSWORD}
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_USERNAME: ${DB_USERNAME}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
+volumes:
+    mysql:
