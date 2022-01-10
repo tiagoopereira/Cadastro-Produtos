@@ -21,7 +21,7 @@
     > Produtos
         - /products [GET] => listagem de produtos
         - /products/create [GET] => formulário de criação de produto
-        - //products/create [POST] => criação de produto
+        - /products/create [POST] => criação de produto
         - /products/{id} [GET] => listagem de um produto em modo formulário para edição
         - /products/{id} [POST] => edição de um produto
         - /products/{id} [DELETE] => exclusão de um produto
