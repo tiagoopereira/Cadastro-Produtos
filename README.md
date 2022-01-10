@@ -19,16 +19,16 @@
 
 #### Rotas
     > Produtos
-        - /products => listagem de produtos
-        - /products/create => criação de produto
-        - /products/{id} => listagem de um produto em modo formulário para edição
-        - /products/{id} (DELETE) => exclusão de um produto
+        - /products [GET] => listagem de produtos
+        - /products/create [GET/POST] => criação de produto
+        - /products/{id} [GET/POST] => listagem de um produto em modo formulário para edição
+        - /products/{id} [DELETE] => exclusão de um produto
         
     > Tags
-        - /tags => listagem de tags
-        - /tags/create => criação de tag
-        - /tags/{id} => listagem de uma tag em modo formulário para edição
-        - /tags/{id} (DELETE) => exclusão de uma tag
+        - /tags [GET] => listagem de tags
+        - /tags/create [GET/POST] => criação de tag
+        - /tags/{id} [GET/POST] => listagem de uma tag em modo formulário para edição
+        - /tags/{id} [DELETE] => exclusão de uma tag
 
 #### Query de relatório de relevânca de produto
 ```sql
