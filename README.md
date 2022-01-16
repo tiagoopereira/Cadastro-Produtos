@@ -9,13 +9,13 @@
     
     > Utilizando Docker:
         - docker-compose up -d
-        - docker exec -it php php bin/console doctrine:migrations:migrate
+        - docker exec -it cadastro_produtos php artisan migrate:fresh --seed
         - porta utilizada: 8080
           
     > Utilizando somente PHP:
         - Necessário PHP:8.*
+        - php artisan migrate:fresh --seed
         - php -S 0.0.0.0:8080 -t public/
-        - php bin/console doctrine:migrations:migrate
 
 #### Rotas
     > Produtos
